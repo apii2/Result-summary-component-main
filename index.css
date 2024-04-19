@@ -8,6 +8,10 @@
   --dark-gray-blue: hsl(224, 30%, 27%);
   --violet-blue: hsla(256, 72%, 46%, 1);
   --persian-blue: hsla(241, 72%, 46%, 0);
+  --primary-light-red: hsl(0, 100%, 67%);
+  --primary-orangey-yellow: hsl(39, 100%, 56%);
+  --primary-green-teal: hsl(166, 100%, 37%);
+  --primary-cobalt-blue: hsl(234, 85%, 45%);
 }
 
 *{
@@ -27,7 +31,6 @@ html, body{
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-
 }
 
 main{
@@ -61,20 +64,18 @@ main{
   height: 9rem;
   align-content: center;
   font-weight: 800;
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin: 1.8rem auto;
-  
 }
 
 .left-wrapper h1 div{
   font-weight: 200;
-  font-size: 18px;
   color: var(--light-lavender);
 }
 
 .left-wrapper h2{
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -84,9 +85,78 @@ main{
 
 .right-wrapper{
   background-color: var(--white);
-  border-radius: 4rem;
+  border-radius: 2rem;
+  padding: 2rem;
 }
 
-ul {
+.right-wrapper header{
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--dark-gray-blue);
+  margin-bottom: 1.2rem;
+}
+
+.right-wrapper ul {
   list-style-type: none;
+  margin-bottom: 1.6rem;
+}
+
+.right-wrapper ul li{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 1rem;
+}
+
+.bg-red{
+  color: var(--primary-light-red);
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.bg-orange{
+  color: var(--primary-orangey-yellow);
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.bg-green{
+  color: var(--primary-green-teal);
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.bg-blue{
+  color: var(--primary-cobalt-blue);
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.right-wrapper ul li div{
+  display: flex;
+  gap: 10px;
+}
+
+.right-wrapper ul li p {
+  color: var(--dark-gray-blue);
+}
+
+.right-wrapper ul li div, .right-wrapper ul li p{
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.text-lightcolored{
+  color: var(--light-lavender);
+}
+
+.right-wrapper button{
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 2rem;
+  width: 100%;
+  padding: 14px;
+}
+
+.right-wrapper button:active{
+  background-image: linear-gradient(var(--light-slate-blue),var(--light-royal-blue));
+  cursor: pointer;
 }
