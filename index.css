@@ -160,3 +160,65 @@ main{
   background-image: linear-gradient(var(--light-slate-blue),var(--light-royal-blue));
   cursor: pointer;
 }
+
+@media screen and (max-width: 375px) {
+  main{
+    grid-template-columns: auto;
+    grid-template-rows: 50% 60%;
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .left-wrapper{
+    height: auto;
+    padding: 0 3rem;
+  }
+
+  .left-wrapper header{
+    font-size: 18px;
+    margin-top: 3rem;
+  }
+
+  .left-wrapper h1 {
+    width: 8rem;
+    height: 8rem;
+    font-size: 3rem;
+    margin: 1.3rem auto;
+  }
+
+  .left-wrapper h1 div{
+    font-size: 16px;
+  }
+
+  .left-wrapper h2{
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+
+  .left-wrapper p{
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .right-wrapper{
+    border-radius: 0;
+    padding: 1.4rem 2rem;
+  }
+
+  .right-wrapper header{
+    font-size: 18px;
+  }
+
+  .right-wrapper ul {
+    margin-bottom: 1.3rem;
+  }
+
+  .right-wrapper ul li {
+    padding: 16px;
+  }
+
+  .right-wrapper button {
+    padding: 16px;
+  }
+}
